@@ -1,0 +1,27 @@
+.services__wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+
+.services__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.services__item {
+    display: flex;
+}
+
+.services__info h2 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.services__info p {
+    font-size: 14px;
+}
