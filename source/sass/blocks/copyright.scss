@@ -1,0 +1,31 @@
+.copyright {
+    margin-top: 25px;
+    text-align: right;
+}
+
+.copyright__text {
+    color: #f2f2f2;
+    margin-bottom: 10px;
+    font-size: 14px;
+
+}
+
+.copyright__link {
+    position: relative;
+    padding-left: 42px;
+    color: #f2f2f2;
+
+}
+
+.copyright__link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url(../../images/site-logo.png);
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 0;
+    background-size: cover;
+    font-size: 14px;
+}

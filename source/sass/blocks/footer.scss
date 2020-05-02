@@ -1,0 +1,41 @@
+.footer {
+    background-color: #000000;
+
+}
+
+.footer__wrapper {
+    margin: 0 auto;
+    width: 100%;
+    min-height: 110px;
+    max-width: 940px;
+    display: flex;
+
+}
+
+.footer__navigation {
+    margin-top: 30px;
+}
+
+.footer__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.footer__item {
+    padding: 0 15px;
+    color: #818180;
+}
+
+.footer__item--active {
+    color: #d3d3d3;
+}
+
+.footer__item--active::before {
+    content: ">";
+    color: #ffbb02;
+}

@@ -15,7 +15,7 @@
         <div class="header-top">
             <div class="header-top__wrapper ">
                 <div class="header-top__container col-6">
-                    <img src="images/logos.jpg" class="header-top__logo"></img>
+                    <img src="images/logos.png" class="header-top__logo"></img>
                     <p class="header-top__logo-text">Аренда</p>
                     <h2 class="header-top__title">услуги строительно <br> техники</h2>
                 </div>
@@ -24,11 +24,11 @@
             </div>
         </div>
         <div class="header-bottom">
-            <div class="header-bottom__wrapper">
+            <div class="header-bottom__wrapper col-12">
                 <img src="images/logo-bottom.png" width="36px" height="36px" class="header-bottom__logo"></img>
                 <nav class="navigation">
                     <ul class="navigation__list">
-                        <li class="navigation__item">КАТАЛОГ ТЕХНИКИ</li>
+                        <li class="navigation__item navigation__item--active">КАТАЛОГ ТЕХНИКИ</li>
                         <li class="navigation__item">УСЛУГИ</li>
                         <li class="navigation__item">ВЫПОЛНЕННЫЕ РАБОТЫ</li>
                         <li class="navigation__item">О КОМПАНИИ</li>
@@ -41,46 +41,54 @@
     </header>
 
     <main class="main">
-        <div class="main__wrapper">
-            <!--SLIDER-->
-            <div class="main-slider slider">
+        <!--SLIDER-->
+        <div class="main-slider slider">
+            <div class="slider__wrapper col-12">
                 <div class="slider-right__buttons">
                     <button></button>
                     <button></button>
                     <button></button>
                 </div>
+                <!--  <div class="slider__text">
+                    <p class="slider__text-top">ПРОФЕССИОНАЛЬНАЯ ТЕХНИКА В АРЕНДУ ОТ</p>
+                    <p class="slider__text-bottom"> <span>15000</span> руб./сутки</p>
+                </div> -->
                 <div class="slider-bottom__buttons">
-                    <button></button>
-                    <button></button>
+                    <button class="slider-bottom__buttons-top"></button>
+                    <button class="slider-bottom__buttons-bottom"></button>
                 </div>
             </div>
+        </div>
         </div>
 
         <div class="transports">
             <div class="transports__wrapper">
-
-
-                <h2 class="transports__name">JCB 4CX Super</h2>
-                <div class="transports__characteristics characteristics">
-                    <div class="characteristics__check">
-                        <input type="checkbox">
-                        <label for="">Характеристика 1</label>
-                    </div>
-                    <div class="characteristics__check">
-                        <input type="checkbox">
-                        <label for="">Характеристика 2</label>
-                    </div>
-                    <div class="characteristics__check">
-                        <input type="checkbox">
-                        <label for="">Характеристика 3</label>
-                    </div>
+                <div class="transports__image">
+                    <img src="images/transport.png" alt="">
                 </div>
+                <div class="transports__content col-8">
+                    <h2 class="transports__name">JCB 4CX Super</h2>
+                    <div class="transports__characteristics characteristics">
+                        <div class="characteristics__box">Характеристика</div>
+                        <div class="characteristics__check">
+                            <input class="characteristics__input" id="first-characteristics" type="checkbox">
+                            <label class="characteristics__name" for="first-characteristics">Характеристика 1</label>
+                        </div>
+                        <div class="characteristics__check">
+                            <input class="characteristics__input" id="second-characteristics" type="checkbox">
+                            <label class="characteristics__name" for="second-characteristics">Характеристика 2</label>
+                        </div>
+                        <div class="characteristics__check">
+                            <input class="characteristics__input" id="third-characteristics" type="checkbox">
+                            <label class="characteristics__name" for="third-characteristics">Характеристика 3</label>
+                        </div>
+                    </div>
 
-                <div class="transports__info info"></div>
-
-                <div class="transports__result">
-                    <p class="transports__price"></p>
-                    <button></button>
+                    <div class="transports__info info">Информация</div>
+                    <div class="transports__results results">
+                        <p class="results__price">125.000Р.</p>
+                        <button class="results__button">Заказать</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -125,36 +133,48 @@
             </div>
         </div>
 
-        <div class="tasks">
-            <div class="tasks__wrapper">
-                <h2></h2>
-                <div class="tasks__box">
-                    <p>1.Задача 1</p>
-                    <p>2.Задача 2</p>
+        <div class="tasks ">
+            <div class="tasks__wrapper col-12">
+                <div class="tasks__container col-7">
+                    <h2 class="tasks__title">Заголовок</h2>
+                    <div class="tasks__box">
+                        <p>1.Задача 1</p>
+                        <p>2.Задача 2</p>
 
-                    <input type="text">
+                        <input class="tasks__input" type="text">
 
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <div class="map">
+            <img src="images/map.jpg" alt="">
         </div>
 
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer col-12">
         <div class="footer__wrapper">
-            <div class="footer__logo"></div>
-            <div class="footer__navigation">
-                <ul>
-                    <li> Главная </li>
-                    <li> Каталог техники </li>
-                    <li> Услуги</li>
-                    <li> Выполненные работы </li>
-                    <li> О компании </li>
-                    <li> Контакты </li>
-                </ul>
+            <div class="header-top__container col-3">
+                <img src="placeholder" class="header-top__logo"></img>
+                <p class="header-top__logo-text">Аренда</p>
             </div>
-            <div class="footer__copyright">
+            <div class="footer__navigation col-6">
+                <ul class="footer-top__list footer__list">
+                    <li class="footer__item footer__item--active"> Главная </li>
+                    <li class="footer__item"> Каталог техники </li>
+                    <li class="footer__item"> Услуги</li>
+                </ul>
+                <ul class="footer-bottom__list footer__list">
+                    <li class="footer__item"> Выполненные работы </li>
+                    <li class="footer__item"> О компании </li>
+                    <li class="footer__item"> Контакты </li>
+                </ul>
+
+            </div>
+            <div class="footer__copyright copyright col-3">
                 <div class="copyright__text">
                     © Aйтекс start 2016
                 </div>

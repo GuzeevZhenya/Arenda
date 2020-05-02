@@ -1,6 +1,4 @@
-.header {
-     padding: 15px 0 20px 0;
-}
+.header {}
 
 .header-top {
      background-color: $bg;
@@ -56,6 +54,7 @@
      display: flex;
      align-items: center;
 }
+
 
 .header-bottom__logo {
      font-size: 0;
