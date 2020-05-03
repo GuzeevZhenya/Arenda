@@ -5,19 +5,12 @@
 }
 
 .header-top__wrapper {
-     margin: 0 auto;
-     max-width: 940px;
-     display: flex;
      justify-content: space-between;
 }
 
 .header-bottom__wrapper {
-     margin: 0 auto;
      width: 100%;
-     max-width: 940px;
-     display: flex;
      align-items: center;
-
 }
 
 
@@ -48,6 +41,12 @@
 .header-top__address {
      font-size: 14px;
      text-align: right;
+}
+
+.header-top__address a {
+     display: block;
+     color: #000000;
+     text-decoration: none;
 }
 
 .header-bottom {

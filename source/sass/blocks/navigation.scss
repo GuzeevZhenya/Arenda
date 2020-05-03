@@ -8,11 +8,19 @@
     list-style: none;
     padding: 0;
     justify-content: space-between;
+}
 
+.navigation__link {
+    text-decoration: none;
 }
 
 .navigation__item {
     color: #818180;
+}
+
+.navigation__item:hover,
+.navigation__item:focus {
+    color: #ffbb02;
 }
 
 .navigation__item--active {

@@ -19,10 +19,10 @@ body {
 }
 
 .row {
+    margin: 0 auto;
+    max-width: 940px;
     display: flex;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
 }
 
 $cols: 12;

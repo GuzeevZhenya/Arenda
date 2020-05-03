@@ -13,26 +13,39 @@
 
     <header class="header">
         <div class="header-top">
-            <div class="header-top__wrapper ">
+            <div class="header-top__wrapper row">
                 <div class="header-top__container col-6">
                     <img src="images/logos.png" class="header-top__logo"></img>
                     <p class="header-top__logo-text">Аренда</p>
                     <h2 class="header-top__title">услуги строительно <br> техники</h2>
                 </div>
                 <p class="header-top__address col-6">г.Екатеринбург, ул.Маяковского, 25
-                    <!--Удалить br--> <br> +7 (343) 222-20-17</p>
+                    <a href="tel:+7 (343) 222-20-17">+7 (343) 222-20-17</a>
+                </p>
             </div>
         </div>
-        <div class="header-bottom">
-            <div class="header-bottom__wrapper col-12">
-                <img src="images/logo-bottom.png" width="36px" height="36px" class="header-bottom__logo"></img>
+        <div class="header-bottom col-12">
+            <div class="header-bottom__wrapper row">
+                <a href="#">
+                    <img src="images/logo-bottom.png" width="36px" height="36px" class="header-bottom__logo"></img>
+                </a>
                 <nav class="navigation">
                     <ul class="navigation__list">
-                        <li class="navigation__item navigation__item--active">КАТАЛОГ ТЕХНИКИ</li>
-                        <li class="navigation__item">УСЛУГИ</li>
-                        <li class="navigation__item">ВЫПОЛНЕННЫЕ РАБОТЫ</li>
-                        <li class="navigation__item">О КОМПАНИИ</li>
-                        <li class="navigation__item">КОНТАКТЫ</li>
+                        <a class="navigation__link" href="#">
+                            <li class="navigation__item navigation__item--active">КАТАЛОГ ТЕХНИКИ</li>
+                        </a>
+                        <a class="navigation__link" href="#">
+                            <li class="navigation__item">УСЛУГИ</li>
+                        </a>
+                        <a class="navigation__link" href="#">
+                            <li class="navigation__item">ВЫПОЛНЕННЫЕ РАБОТЫ</li>
+                        </a>
+                        <a class="navigation__link" href="#">
+                            <li class="navigation__item">О КОМПАНИИ</li>
+                        </a>
+                        <a class="navigation__link" href="#">
+                            <li class="navigation__item">КОНТАКТЫ</li>
+                        </a>
                     </ul>
                 </nav>
             </div>
@@ -42,8 +55,8 @@
 
     <main class="main">
         <!--SLIDER-->
-        <div class="main-slider slider">
-            <div class="slider__wrapper col-12">
+        <div class="main-slider slider col-12">
+            <div class="slider__wrapper row">
                 <div class="slider-right__buttons">
                     <button></button>
                     <button></button>
@@ -59,10 +72,13 @@
                 </div>
             </div>
         </div>
+
+        <div class="way">
+            <span>Главная/Каталог/</span> Название товара
         </div>
 
-        <div class="transports">
-            <div class="transports__wrapper">
+        <form action="form.php" name="transports__order" method="post" class="transports">
+            <div class="transports__wrapper row">
                 <div class="transports__image">
                     <img src="images/transport.png" alt="">
                 </div>
@@ -91,10 +107,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
 
         <div class="services">
-            <div class="services__wrapper">
+            <div class="services__wrapper row">
                 <h2 class="services__title">Услуги</h2>
                 <ul class="services__list">
                     <li class="services__item col-6">
@@ -133,8 +149,8 @@
             </div>
         </div>
 
-        <div class="tasks ">
-            <div class="tasks__wrapper col-12">
+        <div class="tasks col-12 ">
+            <div class="tasks__wrapper row">
                 <div class="tasks__container col-7">
                     <h2 class="tasks__title">Заголовок</h2>
                     <div class="tasks__box">
@@ -156,21 +172,33 @@
     </main>
 
     <footer class="footer col-12">
-        <div class="footer__wrapper">
+        <div class="footer__wrapper row">
             <div class="header-top__container col-3">
                 <img src="placeholder" class="header-top__logo"></img>
                 <p class="header-top__logo-text">Аренда</p>
             </div>
             <div class="footer__navigation col-6">
                 <ul class="footer-top__list footer__list">
-                    <li class="footer__item footer__item--active"> Главная </li>
-                    <li class="footer__item"> Каталог техники </li>
-                    <li class="footer__item"> Услуги</li>
+                    <a class="footer__link" href="#">
+                        <li class="footer__item footer__item--active"> Главная </li>
+                    </a>
+                    <a class="footer__link" href="#">
+                        <li class="footer__item"> Каталог техники </li>
+                    </a>
+                    <a class="footer__link" href="#">
+                        <li class="footer__item"> Услуги</li>
+                    </a>
                 </ul>
                 <ul class="footer-bottom__list footer__list">
-                    <li class="footer__item"> Выполненные работы </li>
-                    <li class="footer__item"> О компании </li>
-                    <li class="footer__item"> Контакты </li>
+                    <a class="footer__link" href="#">
+                        <li class="footer__item"> Выполненные работы </li>
+                    </a>
+                    <a class="footer__link" href="#">
+                        <li class="footer__item"> О компании </li>
+                    </a>
+                    <a class="footer__link" href="#">
+                        <li class="footer__item"> Контакты </li>
+                    </a>
                 </ul>
 
             </div>

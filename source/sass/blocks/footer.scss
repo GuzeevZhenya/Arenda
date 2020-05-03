@@ -4,12 +4,9 @@
 }
 
 .footer__wrapper {
-    margin: 0 auto;
     width: 100%;
     min-height: 110px;
     max-width: 940px;
-    display: flex;
-
 }
 
 .footer__navigation {
@@ -24,6 +21,15 @@
     padding: 0;
     margin: 0;
     margin-bottom: 10px;
+}
+
+.footer__link {
+    text-decoration: none;
+}
+
+.footer__item:hover,
+.footer__item:focus {
+    color: #ffbb02;
 }
 
 .footer__item {
