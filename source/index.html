@@ -13,19 +13,20 @@
 
     <header class="header">
         <div class="header-top">
-            <div class="header-top__wrapper row">
-                <div class="header-top__container col-6">
-                    <img src="images/logos.png" class="header-top__logo"></img>
-                    <p class="header-top__logo-text">Аренда</p>
-                    <h2 class="header-top__title">услуги строительно <br> техники</h2>
+            <div class="header-top__wrapper wrapper">
+                <div class="row">
+                    <div class="header-top__container col-6">
+                        <img src="images/logo.png" class="header-top__logo"></img>
+                        <h2 class="header-top__title">услуги строительно <br> техники</h2>
+                    </div>
+                    <p class="header-top__address col-6">г.Екатеринбург, ул.Маяковского, 25
+                        <a href="tel:+7 (343) 222-20-17">+7 (343) 222-20-17</a>
+                    </p>
                 </div>
-                <p class="header-top__address col-6">г.Екатеринбург, ул.Маяковского, 25
-                    <a href="tel:+7 (343) 222-20-17">+7 (343) 222-20-17</a>
-                </p>
             </div>
         </div>
         <div class="header-bottom col-12">
-            <div class="header-bottom__wrapper row">
+            <div class="header-bottom__wrapper wrapper">
                 <a href="#">
                     <img src="images/logo-bottom.png" width="36px" height="36px" class="header-bottom__logo"></img>
                 </a>
@@ -56,7 +57,8 @@
     <main class="main">
         <!--SLIDER-->
         <div class="main-slider slider col-12">
-            <div class="slider__wrapper row">
+            <img src="images/main-bg.jpg" class="slider__main-bg" width="1920px" height="551px" alt="">
+            <div class="slider__wrapper">
                 <div class="slider-right__buttons">
                     <button></button>
                     <button></button>
@@ -73,92 +75,115 @@
             </div>
         </div>
 
-        <div class="way">
-            <span>Главная/Каталог/</span> Название товара
+        <div class="way wrapper">
+            <a href="index.html">Главная</a>/<a href="#">Каталог</a>/<a href class="selector">Название товара</a>
         </div>
 
         <form action="form.php" name="transports__order" method="post" class="transports">
-            <div class="transports__wrapper row">
-                <div class="transports__image">
-                    <img src="images/transport.png" alt="">
-                </div>
-                <div class="transports__content col-8">
-                    <h2 class="transports__name">JCB 4CX Super</h2>
-                    <div class="transports__characteristics characteristics">
-                        <div class="characteristics__box">Характеристика</div>
-                        <div class="characteristics__check">
-                            <input class="characteristics__input" id="first-characteristics" type="checkbox">
-                            <label class="characteristics__name" for="first-characteristics">Характеристика 1</label>
-                        </div>
-                        <div class="characteristics__check">
-                            <input class="characteristics__input" id="second-characteristics" type="checkbox">
-                            <label class="characteristics__name" for="second-characteristics">Характеристика 2</label>
-                        </div>
-                        <div class="characteristics__check">
-                            <input class="characteristics__input" id="third-characteristics" type="checkbox">
-                            <label class="characteristics__name" for="third-characteristics">Характеристика 3</label>
-                        </div>
+            <div class="transports__wrapper wrapper">
+                <div class="row">
+                    <div class="transports__image col-4">
+                        <img src="images/transport.png" alt="">
                     </div>
+                    <div class="transports__content col-8">
+                        <h2 class="transports__name">JCB 4CX Super</h2>
+                        <div class="transports__characteristics characteristics">
+                            <div class="characteristics__box">
+                                <div class="characteristics__title">Характеристика</div>
+                                <div class="characteristics__check">
+                                    <input class="characteristics__input" id="first-characteristics" type="checkbox">
+                                    <label class="characteristics__name" for="first-characteristics">Характеристика
+                                        1</label>
+                                </div>
+                            </div>
+                            <div class="characteristics__check">
+                                <input class="characteristics__input" id="second-characteristics" type="checkbox">
+                                <label class="characteristics__name" for="second-characteristics">Характеристика
+                                    2</label>
+                            </div>
+                            <div class="characteristics__check">
+                                <input class="characteristics__input" id="third-characteristics" type="checkbox">
+                                <label class="characteristics__name" for="third-characteristics">Характеристика
+                                    3</label>
+                            </div>
+                        </div>
 
-                    <div class="transports__info info">Информация</div>
-                    <div class="transports__results results">
-                        <p class="results__price">125.000Р.</p>
-                        <button class="results__button">Заказать</button>
+                        <div class="transports__info info">Информация</div>
+                        <div class="transports__results results">
+                            <p class="results__price">125.000Р.</p>
+                            <button class="results__button">Заказать</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </form>
 
         <div class="services">
-            <div class="services__wrapper row">
-                <h2 class="services__title">Услуги</h2>
-                <ul class="services__list">
-                    <li class="services__item col-6">
-                        <img src="images/services.jpg" alt="">
-                        <div class="services__info">
-                            <h2>ЗАСЫПКА ТРАНШЕЙ</h2>
-                            <p>Нашей компанией осуществляется засыпка траншей в Екатеринбурге, востребованная
-                                предприятиями и частными лицами.</p>
-                        </div>
-                    </li>
-                    <li class="services__item col-6">
-                        <img src="images/services.jpg" alt="">
-                        <div class="services__info">
-                            <h2>ЗАСЫПКА ТРАНШЕЙ</h2>
-                            <p>Нашей компанией осуществляется засыпка траншей в Екатеринбурге, востребованная
-                                предприятиями и частными лицами.</p>
-                        </div>
-                    </li>
-                    <li class="services__item col-6">
-                        <img src="images/services.jpg" alt="">
-                        <div class="services__info">
-                            <h2>ЗАСЫПКА ТРАНШЕЙ</h2>
-                            <p>Нашей компанией осуществляется засыпка траншей в Екатеринбурге, востребованная
-                                предприятиями и частными лицами.</p>
-                        </div>
-                    </li>
-                    <li class="services__item col-6">
-                        <img src="images/services.jpg" alt="">
-                        <div class="services__info">
-                            <h2>ЗАСЫПКА ТРАНШЕЙ</h2>
-                            <p>Нашей компанией осуществляется засыпка траншей в Екатеринбурге, востребованная
-                                предприятиями и частными лицами.</p>
-                        </div>
-                    </li>
-                </ul>
+            <div class="services__wrapper wrapper">
+                <div class="row">
+                    <h2 class="services__title">Услуги</h2>
+                    <ul class="services__list">
+                        <li class="services__item col-6">
+                            <img src="images/services.jpg" alt="">
+                            <div class="services__info">
+                                <h2>ЗАСЫПКА ТРАНШЕЙ</h2>
+                                <p>Нашей компанией осуществляется засыпка траншей в Екатеринбурге, востребованная
+                                    предприятиями и частными лицами.</p>
+                            </div>
+                        </li>
+                        <li class="services__item col-6">
+                            <img src="images/services.jpg" alt="">
+                            <div class="services__info">
+                                <h2>ЗАСЫПКА ТРАНШЕЙ</h2>
+                                <p>Нашей компанией осуществляется засыпка траншей в Екатеринбурге, востребованная
+                                    предприятиями и частными лицами.</p>
+                            </div>
+                        </li>
+                        <li class="services__item col-6">
+                            <img src="images/services.jpg" alt="">
+                            <div class="services__info">
+                                <h2>ЗАСЫПКА ТРАНШЕЙ</h2>
+                                <p>Нашей компанией осуществляется засыпка траншей в Екатеринбурге, востребованная
+                                    предприятиями и частными лицами.</p>
+                            </div>
+                        </li>
+                        <li class="services__item col-6">
+                            <img src="images/services.jpg" alt="">
+                            <div class="services__info">
+                                <h2>ЗАСЫПКА ТРАНШЕЙ</h2>
+                                <p>Нашей компанией осуществляется засыпка траншей в Екатеринбурге, востребованная
+                                    предприятиями и частными лицами.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
 
         <div class="tasks col-12 ">
-            <div class="tasks__wrapper row">
-                <div class="tasks__container col-7">
-                    <h2 class="tasks__title">Заголовок</h2>
-                    <div class="tasks__box">
-                        <p>1.Задача 1</p>
-                        <p>2.Задача 2</p>
+            <div class="tasks__wrapper wrapper">
+                <div class="row">
+                    <div class="tasks__container col-7">
+                        <h2 class="tasks__title">Заголовок</h2>
+                        <div class="tasks__box">
+                            <div class="tasks__item">
+                                <p>1.Задача 1</p>
+                                <button class="tasks__item-button tasks__item-button--pen"></button>
+                                <button class="tasks__item-button tasks__item-button--delete"></button>
+                            </div>
+                            <div class="tasks__item">
+                                <p>1.Задача 2</p>
+                                <button class="tasks__item-button tasks__item-button--pen"></button>
+                                <button class="tasks__item-button tasks__item-button--delete"></button>
+                            </div>
 
-                        <input class="tasks__input" type="text">
 
+                            <div class="tasks__item">
+                                <input class="tasks__input" type="text">
+                                <button class="tasks__item-button tasks__item-button--pen"></button>
+                                <button class="tasks__item-button tasks__item-button--delete"></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -172,43 +197,44 @@
     </main>
 
     <footer class="footer col-12">
-        <div class="footer__wrapper row">
-            <div class="header-top__container col-3">
-                <img src="placeholder" class="header-top__logo"></img>
-                <p class="header-top__logo-text">Аренда</p>
-            </div>
-            <div class="footer__navigation col-6">
-                <ul class="footer-top__list footer__list">
-                    <a class="footer__link" href="#">
-                        <li class="footer__item footer__item--active"> Главная </li>
-                    </a>
-                    <a class="footer__link" href="#">
-                        <li class="footer__item"> Каталог техники </li>
-                    </a>
-                    <a class="footer__link" href="#">
-                        <li class="footer__item"> Услуги</li>
-                    </a>
-                </ul>
-                <ul class="footer-bottom__list footer__list">
-                    <a class="footer__link" href="#">
-                        <li class="footer__item"> Выполненные работы </li>
-                    </a>
-                    <a class="footer__link" href="#">
-                        <li class="footer__item"> О компании </li>
-                    </a>
-                    <a class="footer__link" href="#">
-                        <li class="footer__item"> Контакты </li>
-                    </a>
-                </ul>
-
-            </div>
-            <div class="footer__copyright copyright col-3">
-                <div class="copyright__text">
-                    © Aйтекс start 2016
+        <div class="footer__wrapper wrapper">
+            <div class="row">
+                <div class="footer__container col-3">
+                    <img src="images/footer-logo.png" class="header-top__logo"></img>
                 </div>
-                <a href="#" class="copyright__link">
-                    itexstart.ru
-                </a>
+                <div class="footer__navigation col-6">
+                    <ul class="footer-top__list footer__list">
+                        <a class="footer__link" href="#">
+                            <li class="footer__item footer__item--active"> Главная </li>
+                        </a>
+                        <a class="footer__link" href="#">
+                            <li class="footer__item"> Каталог техники </li>
+                        </a>
+                        <a class="footer__link" href="#">
+                            <li class="footer__item"> Услуги</li>
+                        </a>
+                    </ul>
+                    <ul class="footer-bottom__list footer__list">
+                        <a class="footer__link" href="#">
+                            <li class="footer__item"> Выполненные работы </li>
+                        </a>
+                        <a class="footer__link" href="#">
+                            <li class="footer__item"> О компании </li>
+                        </a>
+                        <a class="footer__link" href="#">
+                            <li class="footer__item"> Контакты </li>
+                        </a>
+                    </ul>
+
+                </div>
+                <div class="footer__copyright copyright col-3">
+                    <div class="copyright__text">
+                        © Aйтекс start 2016
+                    </div>
+                    <a href="#" class="copyright__link">
+                        itexstart.ru
+                    </a>
+                </div>
             </div>
         </div>
     </footer>

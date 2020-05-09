@@ -1,58 +1,47 @@
 .tasks__wrapper {
-    padding: 47px 0 107px 0;
+  padding: 47px 0 107px 0;
 }
 
 .tasks__title {
-    font-style: 24px;
-    line-height: 24px;
-    font-weight: bold;
+  font-style: 24px;
+  line-height: 24px;
+  font-weight: bold;
 }
 
 .tasks__box {
-    font-style: 24px;
-    line-height: 24px;
-    font-weight: bold;
+  font-style: 24px;
+  line-height: 24px;
+  font-weight: bold;
 }
 
 .tasks__input {
-    position: relative;
-    width: 100%;
-    height: 40px;
-    border: 2px solid #535353;
-    border-radius: 5px;
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0.35, 0);
+  position: relative;
+  width: 100%;
+  height: 40px;
+  border: 2px solid #535353;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0);
+          box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0);
 }
 
 .tasks__item {
-    display: flex;
-    align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .tasks__item p {
-    margin-right: 45px;
-
+  margin-right: 45px;
 }
 
 .tasks__item-button {
-    margin-right: 27px;
-    border: none;
-    cursor: pointer;
-}
-
-.tasks__item-button--pen {
-    background: url("../../images/pen.png");
-    height: 18px;
-    width: 17px;
-}
-
-.tasks__item-button--delete {
-    height: 14px;
-    width: 14px;
-    background: url(../../images/close.png);
-}
-
-.tasks__input {
-    margin-right: 34px;
+  width: 20px;
+  height: 20px;
+  margin-right: 27px;
+  border: none;
 }
 
 /*
@@ -111,3 +100,4 @@
 }
 
 */
+/*# sourceMappingURL=task.css.map */
