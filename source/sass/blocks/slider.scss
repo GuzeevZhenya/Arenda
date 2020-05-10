@@ -19,11 +19,16 @@
 }
 
 .slider__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: relative;
     margin: 0 auto;
     min-height: 551px;
     width: 100%;
     max-width: 940px;
-    position: relative;
 }
 
 .slider-right__buttons {
@@ -58,6 +63,7 @@
     top: -60px;
     background-color: #000000;
     border: none;
+    background: url("../../images/arrow-left.png");
 }
 
 .slider-bottom__buttons-bottom {
@@ -69,4 +75,5 @@
     left: 30px;
     background-color: #000000;
     border: none;
+    background: url("../../images/arrow-right.png");
 }
