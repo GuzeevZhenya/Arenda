@@ -63,24 +63,29 @@
 
     <main class="main">
         <!--SLIDER-->
-        <div class="main-slider slider col-12">
-            <img src="images/main-bg.jpg" class="slider__main-bg" width="1920px" height="551px" alt="">
-            <div class="slider__wrapper">
-                <div class="slider-right__buttons">
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                </div>
-                <!--  <div class="slider__text">
+        <div class="main-slider slider swiper-container">
+            <div class="slider__wrapper swiper-wrapper">
+                <img src="images/main-bg.jpg" class="slider__main-bg" width="1920px" height="551px" alt="">
+                <img src="images/main-bg.jpg" class="slider__main-bg swiper-slide" width="1920px" height="551px" alt="">
+            </div>
+
+            <div class="slider__wrapper wrapper">
+                <button></button>
+                <button></button>
+                <button></button>
+            </div>
+        </div>
+        <!--  <div class="slider__text">
                     <p class="slider__text-top">ПРОФЕССИОНАЛЬНАЯ ТЕХНИКА В АРЕНДУ ОТ</p>
                     <p class="slider__text-bottom"> <span>15000</span> руб./сутки</p>
                 </div> -->
-                <div class="slider-bottom__buttons">
-                    <button class="slider-bottom__buttons-top"></button>
-                    <button class="slider-bottom__buttons-bottom"></button>
-                </div>
-            </div>
+        <div class="slider-bottom__buttons">
+            <button class="slider-bottom__buttons-top swiper-button-prev"></button>
+            <button class="slider-bottom__buttons-bottom swiper-button-next"></button>
         </div>
+        </div>
+        </div>
+
 
         <div class="way wrapper">
             <a href="index.html">Главная</a>/<a href="#">Каталог</a>/<a href class="selector">Название товара</a>
@@ -199,8 +204,6 @@
         <div class="map">
             <img src="images/map.jpg" alt="">
         </div>
-
-
     </main>
 
     <footer class="footer">
@@ -245,6 +248,32 @@
             </div>
         </div>
     </footer>
+
+
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+
+            direction: 'vertical',
+            loop: true,
+
+
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })
+    </script>
+
 
 </body>
 

@@ -12,14 +12,16 @@
 
 .navigation__link {
     text-decoration: none;
+    padding: 20px 0;
+    color: #818180;
 }
 
 .navigation__item {
     color: #818180;
 }
 
-.navigation__item:hover,
-.navigation__item:focus {
+.navigation__link:hover,
+.navigation__link:focus {
     color: #ffbb02;
 }
 

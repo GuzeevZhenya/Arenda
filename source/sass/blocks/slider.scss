@@ -8,14 +8,20 @@
 
 .slider {
     position: relative;
+    overflow: hidden;
 }
 
+// .slider__main-bg {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+// }
+
 .slider__main-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    width: 100%;
+    vertical-align: top;
 }
 
 .slider__wrapper {
@@ -24,56 +30,48 @@
     left: 0;
     right: 0;
     bottom: 0;
-    position: relative;
-    margin: 0 auto;
-    min-height: 551px;
-    width: 100%;
-    max-width: 940px;
 }
 
 .slider-right__buttons {
-    content: "";
     position: absolute;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-
+    right: 15px;
+    width: 16px;
 }
 
 .slider-right__buttons button {
     width: 16px;
     height: 16px;
     margin-top: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #000;
+
+    &.active {
+        background-color: #fff;
+        cursor: default;
+    }
 }
 
 .slider-bottom__buttons {
     position: absolute;
     left: 50%;
     bottom: 0;
-
-    display: flex;
 }
 
-
-.slider-bottom__buttons-top {
-
-    position: absolute;
+.slider-bottom__button {
     width: 30px;
     height: 30px;
-    top: -60px;
-    background-color: #000000;
-    border: none;
     background: url("../../images/arrow-left.png");
+    border: none;
+    display: block;
+    cursor: pointer;
 }
 
-.slider-bottom__buttons-bottom {
+.slider-bottom__button--right {
+    transform: scale(-1, -1);
+    margin-left: 30px;
+}
 
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    top: -30px;
-    left: 30px;
-    background-color: #000000;
-    border: none;
-    background: url("../../images/arrow-right.png");
+.main-slider__wrapper {
+    display: flex;
 }
